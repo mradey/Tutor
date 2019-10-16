@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+input[type=text] {
+  width: 1000px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+input[type=submit] {
+  width: 1000px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+button{
+  width: 200px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+html,body {
+  height:100%;
+  width:100%;
+  margin:0;
+}
+body , body {
+  display:flex;
+  text-align:center;
+}
+div {
+  margin:auto;
+}
+</style>
+</head>
+<body>
+  <form action="{{ url_for('proposal') }}" method="post">
+      <input type="text" id="code" name="code" placeholder="enter code">
+      <input type="submit">
+  </form>
+</body>
+</html>
